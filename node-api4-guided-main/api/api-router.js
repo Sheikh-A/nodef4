@@ -7,7 +7,7 @@ const router = express.Router();
 router.use(express.json());
 
 router.get("/", (req, res) => {
-  const message: process.env.MESSAGE;
+  const message = process.env.MESSAGE;
   res.status(200).json({message});
 });
 
